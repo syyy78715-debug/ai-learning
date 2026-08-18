@@ -1,14 +1,9 @@
-try:
-    num1 = float(input("请输入第一个数字："))
-    num2 = float(input("请输入第二个数字："))
+password = ""
 
-    print("加法结果：", num1 + num2)
-    print("减法结果：", num1 - num2)
-    print("乘法结果：", num1 * num2)
-    print("除法结果：", num1 / num2)
+while password != "123456":
+    password = input("请输入密码：")
 
-except ValueError:
-    print("输入错误：请输入数字。")
+    if password != "123456":
+        print("密码错误，请重新输入。")
 
-except ZeroDivisionError:
-    print("计算错误：第二个数字不能是 0。")
+print("密码正确，登录成功！")
