@@ -1,8 +1,10 @@
-def say_hello(name):
-    print("你好，", name)
-    print("欢迎来到 AI 学习之旅！")
+def add(a, b):
+    return a + b
 
 
-say_hello("商商")
-say_hello("小明")
-say_hello("小红")
+num1 = float(input("请输入第一个数字："))
+num2 = float(input("请输入第二个数字："))
+
+answer = add(num1, num2)
+
+print("计算结果：", answer)
