@@ -1,14 +1,16 @@
-assistant = {
-    "name": "AI助手",
-    "model": "DeepSeek",
-    "language": "中文",
-    "version": 1
-}
+import json
 
-print("助手名称：", assistant["name"])
-print("使用模型：", assistant["model"])
-print("语言：", assistant["language"])
-print("版本：", assistant["version"])
-assistant["version"] = 2
+messages = [
+    {
+        "role": "user",
+        "content": "你好，请介绍一下人工智能。"
+    },
+    {
+        "role": "assistant",
+        "content": "人工智能是一种让计算机执行需要智能能力任务的技术。"
+    }
+]
 
-print("更新后的版本：", assistant["version"])
+json_data = json.dumps(messages, ensure_ascii=False, indent=2)
+
+print(json_data)
