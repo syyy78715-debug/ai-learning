@@ -1,8 +1,5 @@
 name = input("请输入你的名字：")
+age = int(input("请输入你的年龄："))
 
-if name == "商商":
-    print("你好，商商！")
-    print("今天也继续学习 AI 吧！")
-else:
-    print("你好，", name)
-    print("欢迎来到 AI 学习之旅！")
+print("你好，", name)
+print("明年你将会是", age + 1, "岁")
